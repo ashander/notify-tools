@@ -11,12 +11,33 @@ But, pull requests are welcome.
 
 [^old]: yes, my development environment is frighteningly old
 
-## INSTALL
+## Install
 
 ```sh
 $ git clone https://github.com/ashander/notify-tools.git
 $ cd notify-tools
 $ pip install .
+```
+
+Note: this will install commands `timer` and `todo` to your `/usr/local/bin/`!
+If you are using these names, you could edit setup.py to change the
+install locations.
+
+## Usage
+
+start a timer with default settings:
+
+```sh
+$ timer 
+```
+view other settings
+```sh
+$ timer --help
+```
+
+put up a todo item
+```sh
+$ todo 'make a thing'
 ```
 
 ## Details
